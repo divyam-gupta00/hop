@@ -1,0 +1,75 @@
+ <html>
+  <head>
+    <title>Image Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+<style>
+  body{
+    background-color: rgba(252, 248, 53, 0.877);
+    color: black;
+    font-weight: bold;
+  }
+.open{
+  background-color: white; height: 50px; border-radius: 50px; margin-top: 15px; color: black;
+}
+  .open:hover{
+color: white;
+background-color: red;
+  }
+  .bb{
+    color: black;
+  }
+</style>
+  <body>
+  <div class="container">
+    
+    <center>
+<div class="open">
+<h1>Image Recognition Web-App</h1>
+</div>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <hr>
+      <h4>Mobile</h4>
+      <hr>
+      <h4>Watch</h4>
+      <hr>
+      <h4>Pen</h4>
+      <hr>
+      <h4>HeadPhone</h4>
+      <hr>
+
+      <label><b>Webcam View - </b></label>
+
+      <br><br>
+      <div id="cam" style="border: dashed; height: 300px; width: 350px;"></div>
+      <br><br>
+      <div id="imge">
+        
+      </div>
+      <br><br>
+      <button onclick="cap()" class="bb">Capture Your Image</button>
+      <br><br>
+      <button onclick="rec()" class="bb">Recognition</button>
+      <br><br>
+
+      <p id="myobject" style="font-size: 22px;">Object :  </p>
+      <p id="myvalue" style="font-size: 22px;">Accuracy :  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
